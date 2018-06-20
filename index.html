@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel=stylesheet href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Tillana" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Rhino Keepers</h1>
+    </header>
+
+    <form class="" action="index.html" method="post">
+
+      <div class="top">
+        <h3>Sign up for our newsletter</h3>
+        <p>Get the latest news about rhinos in the wild, and how we're plotting to save them.</p>
+      </div>
+
+      <fieldset class="contact">
+        <legend>Contact Information</legend>
+
+        <label for="name">Full Name</label>
+        <input type="text" name="user_name" id="name">
+
+        <label for="email">Email Address</label>
+        <input type="email" name="user_email" id="email">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="user_phone" id="phone">
+
+        <label for="street">Street Address</label>
+        <input type="text" name="user_street" id="street">
+
+        <label for="city">City</label>
+        <input type="text" name="user_city" id="city">
+
+        <label for="state">State</label>
+        <input type="text" name="user_state" id="state">
+
+        <label for="zip">Zip Code</label>
+        <input type="text" name="user_zip" id="zip">
+
+        <label for="friends">Number of Rhinos You've Met</label>
+        <input type="number" name="user_friends" id="friends">
+
+      </fieldset>
+
+      <fieldset class="rhino">
+        <legend>Newsletter</legend>
+
+        <div class="species">
+          <label class="title">Select the species of rhino you'd like to get news from:</label>
+          <label for="rhino_black"><input type="checkbox" id="rhino_black" name="rhino_type" value="rhino_black">Black Rhino</label>
+          <label for="rhino_white"><input type="checkbox" id="rhino_white" name="rhino_type" value="rhino_white">White Rhino</label>
+          <label for="rhino_indian"><input type="checkbox" id="rhino_indian" name="rhino_type" value="rhino_indian">Indian Rhino</label>
+          <label for="rhino_javan"><input type="checkbox" id="rhino_javan" name="rhino_type" value="rhino_javan">Javan Rhino (rarest kind!)</label>
+        </div>
+
+        <div class="drop">
+          <label class="title">Newsletter delivery:</label>
+          <label for="airdrop"><input type="radio" id="airdrop" name="delivery" value="airdrop">Airdrop</label>
+          <label for="snailmail"><input type="radio" id="snailmail" name="delivery" value="snailmail">Snail Mail</label>
+          <label for="rhinomail"><input type="radio" id="rhinomail" name="delivery" value="rhinomail">Rhino Mail (delivery, by a rhino)</label>
+        </div>
+
+
+        <label class="title">Would you be interested in sponsoring a rhino?</label>
+        <label for="yes"><input type="radio" id="yes" name="sponsor" value="yes">Yes</label>
+        <label for="no"><input type="radio" id="no" name="sponsor" value="no">No</label>
+
+        <label for="topics" class="title">Do you have any suggestions for Rhino-Con 2018?</label>
+        <textarea name="extra_topics" id="topics"></textarea>
+
+      </fieldset>
+
+      <button type="submit">Tell me about the Rhinos!</button>
+
+    </form>
+
+    <footer>
+      <div class="foot">
+        <p>	&copy; Jacki Bolt, approved by the rhinos</p>
+        <img src="images/footprint.jpg" alt="Rhino Footprint" id="footprint">
+      </div>
+    </footer>
+
+  </body>
+</html>

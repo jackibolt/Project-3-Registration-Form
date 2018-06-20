@@ -1,0 +1,179 @@
+/* Base Styles  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tillana', cursive;
+  /* font-family: 'Roboto', sans-serif; */
+  color: #1f2b3d;
+}
+
+
+/*  Header Styles  */
+
+header {
+    background: #1f2b3d;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-top: 0;
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 800;
+}
+
+p {
+  color: #b3b3b3;
+  font-weight: 400;
+}
+
+/*  Form Styles  */
+
+form {
+  text-align: center;
+  width: 93%;
+  margin: auto;
+}
+
+fieldset {
+  border: none;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+legend {
+  border-top: #1f2b3d solid 1px;
+  width: 100%;
+  padding-top: 15px;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+label,
+input,
+textarea {
+  text-align: left;
+}
+
+input,
+textarea {
+  background: #f2f2f2;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+}
+
+input {
+  height: 45px;
+  padding-left: 10px;
+}
+
+.top {
+  margin: auto;
+  margin-bottom: 2.5px;
+  border-bottom: #1f2b3d solid 3px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+[type="radio"],
+[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+}
+
+#rhino_javan,
+#rhinomail,
+#no {
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  border: none;
+  margin-top: 20px;
+}
+
+button {
+  background: #009999;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+/*  Footer Styles  */
+
+footer {
+  margin: auto;
+  height: 80px;
+  text-align: center;
+  font-size: .8em;
+  margin-top: 30px;
+}
+
+.foot {
+  margin-left: 20%;
+}
+
+footer p,
+#footprint {
+  float: left;
+}
+
+#footprint {
+  height: 50px;
+}
+
+footer::after {
+  content:""
+  clear: both;
+  display: table;
+}
+
+/*  Pseudo Class Styles  */
+
+.contact input:hover {
+  border: #1f2b3d solid 1.5px;
+  box-shadow: 0 0 1pt 1pt #009999
+}
+
+.contact input:focus {
+  border: none;
+  box-shadow: 0 0 1.5pt 1.5pt #009999;
+  outline: none;
+}
+
+
+
+@media (min-width: 768px) {
+
+
+
+
+
+  .foot {
+    margin-left: 35%;
+  }
+}
