@@ -15,83 +15,190 @@
   <body>
 
     <header>
-      <h1>The Rhino Review</h1>
+      <div class="container">
+        <img src="images/rhinoleft.png" alt="Rhino Logo" id="logoleft">
+        <h1>The Rhino Review</h1>
+        <img src="images/rhinoright.png" alt="Rhino Logo" id="logoright">
+      </div>
     </header>
 
-    <form class="" action="index.html" method="post">
+    <div class="wrap">
+      <form class="" action="index.html" method="post">
 
-      <div class="top">
-        <h3>Sign up for our newsletter</h3>
-        <p>Get the latest news from rhinos in the wild.</p>
-      </div>
-
-      <fieldset class="contact">
-        <legend>Contact Information</legend>
-
-        <label for="name">Full Name</label>
-        <input type="text" name="user_name" id="name">
-
-        <label for="email">Email Address</label>
-        <input type="email" name="user_email" id="email">
-
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="user_phone" id="phone">
-
-        <label for="street">Street Address</label>
-        <input type="text" name="user_street" id="street">
-
-        <label for="city">City</label>
-        <input type="text" name="user_city" id="city">
-
-        <label for="state">State</label>
-        <input type="text" name="user_state" id="state">
-
-        <label for="zip">Zip Code</label>
-        <input type="text" name="user_zip" id="zip">
-
-        <label for="friends">Number of Rhinos You've Met</label>
-        <input type="number" name="user_friends" id="friends">
-
-      </fieldset>
-
-      <fieldset class="rhino">
-        <legend>Newsletter</legend>
-
-        <div class="species">
-          <label class="title">Select the species of rhino you'd like to get news from:</label>
-          <label for="rhino_black"><input type="checkbox" id="rhino_black" name="rhino_type" value="rhino_black">Black Rhino</label>
-          <label for="rhino_white"><input type="checkbox" id="rhino_white" name="rhino_type" value="rhino_white">White Rhino</label>
-          <label for="rhino_indian"><input type="checkbox" id="rhino_indian" name="rhino_type" value="rhino_indian">Indian Rhino</label>
-          <label for="rhino_javan"><input type="checkbox" id="rhino_javan" name="rhino_type" value="rhino_javan">Javan Rhino (rarest kind!)</label>
+        <div class="top">
+          <h3>Sign up for our newsletter</h3>
+          <p>Get the latest news from rhinos in the wild.</p>
         </div>
 
-        <div class="drop">
-          <label class="title">Newsletter delivery:</label>
-          <label for="airdrop"><input type="radio" id="airdrop" name="delivery" value="airdrop">Airdrop</label>
-          <label for="snailmail"><input type="radio" id="snailmail" name="delivery" value="snailmail">Snail Mail</label>
-          <label for="rhinomail"><input type="radio" id="rhinomail" name="delivery" value="rhinomail">Rhino Mail (delivery, by a rhino)</label>
+        <fieldset class="contact">
+          <legend>Contact Information</legend>
+
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" name="user_name" id="name" placeholder="*Required" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" name="user_email" id="email" placeholder="*Required" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="user_phone" id="phone" placeholder="(000) 000-0000">
+          </div>
+
+          <div class="field">
+            <label for="street">Street Address</label>
+            <input type="text" name="user_street" id="street">
+          </div>
+
+          <div class="field">
+            <label for="city">City</label>
+            <input type="text" name="user_city" id="city">
+          </div>
+
+          <div class="field">
+          <label for="state">State</label>
+            <select id="state" name="user_state">
+              <option value="none"></option>
+              <option value="AL">Alabama</option>
+            	<option value="AK">Alaska</option>
+            	<option value="AZ">Arizona</option>
+            	<option value="AR">Arkansas</option>
+            	<option value="CA">California</option>
+            	<option value="CO">Colorado</option>
+            	<option value="CT">Connecticut</option>
+            	<option value="DE">Delaware</option>
+            	<option value="DC">District Of Columbia</option>
+            	<option value="FL">Florida</option>
+            	<option value="GA">Georgia</option>
+            	<option value="HI">Hawaii</option>
+            	<option value="ID">Idaho</option>
+            	<option value="IL">Illinois</option>
+            	<option value="IN">Indiana</option>
+            	<option value="IA">Iowa</option>
+            	<option value="KS">Kansas</option>
+            	<option value="KY">Kentucky</option>
+            	<option value="LA">Louisiana</option>
+            	<option value="ME">Maine</option>
+            	<option value="MD">Maryland</option>
+            	<option value="MA">Massachusetts</option>
+            	<option value="MI">Michigan</option>
+            	<option value="MN">Minnesota</option>
+            	<option value="MS">Mississippi</option>
+            	<option value="MO">Missouri</option>
+            	<option value="MT">Montana</option>
+            	<option value="NE">Nebraska</option>
+            	<option value="NV">Nevada</option>
+            	<option value="NH">New Hampshire</option>
+            	<option value="NJ">New Jersey</option>
+            	<option value="NM">New Mexico</option>
+            	<option value="NY">New York</option>
+            	<option value="NC">North Carolina</option>
+            	<option value="ND">North Dakota</option>
+            	<option value="OH">Ohio</option>
+            	<option value="OK">Oklahoma</option>
+            	<option value="OR">Oregon</option>
+            	<option value="PA">Pennsylvania</option>
+            	<option value="RI">Rhode Island</option>
+            	<option value="SC">South Carolina</option>
+            	<option value="SD">South Dakota</option>
+            	<option value="TN">Tennessee</option>
+            	<option value="TX">Texas</option>
+            	<option value="UT">Utah</option>
+            	<option value="VT">Vermont</option>
+            	<option value="VA">Virginia</option>
+            	<option value="WA">Washington</option>
+            	<option value="WV">West Virginia</option>
+            	<option value="WI">Wisconsin</option>
+            	<option value="WY">Wyoming</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="zip">Zip Code</label>
+            <input type="text" name="user_zip" id="zip">
+          </div>
+        </fieldset>
+
+        <fieldset class="rhino">
+          <legend>Newsletter</legend>
+
+          <div class="species">
+            <label class="title">Select the species of rhino you'd like to get news from:</label>
+
+            <div class="selection">
+              <input type="checkbox" id="rhino_black" name="rhino_type" value="rhino_black">
+              <label for="rhino_black">Black Rhino</label>
+            </div>
+
+            <div class="selection">
+              <input type="checkbox" id="rhino_white" name="rhino_type" value="rhino_white">
+              <label for="rhino_white">White Rhino</label>
+            </div>
+
+            <div class="selection">
+              <input type="checkbox" id="rhino_indian" name="rhino_type" value="rhino_indian">
+              <label for="rhino_indian">Indian Rhino</label>
+            </div>
+
+            <div class="selection">
+              <input type="checkbox" id="rhino_javan" name="rhino_type" value="rhino_javan">
+              <label for="rhino_javan">Javan Rhino (rarest kind!)</label>
+            </div>
+          </div>
+
+          <div class="drop">
+            <label class="title">Newsletter delivery:</label>
+
+            <div class="selection">
+              <input type="radio" id="electronic" name="delivery" value="electronic">
+              <label for="electronic">Electronic</label>
+            </div>
+
+            <div class="selection">
+              <input type="radio" id="snailmail" name="delivery" value="snailmail">
+              <label for="snailmail">Snail Mail</label>
+            </div>
+
+            <div class="selection">
+              <input type="radio" id="rhinomail" name="delivery" value="rhinomail">
+              <label for="rhinomail">Rhino Mail (delivery, by a rhino)</label>
+            </div>
+          </div>
+
+
+          <label class="title">Would you be interested in sponsoring a rhino?</label>
+
+          <div class="selection">
+            <input type="radio" id="yes" name="sponsor" value="yes">
+            <label for="yes">Yes</label>
+          </div>
+
+          <div class="selection">
+            <input type="radio" id="no" name="sponsor" value="no">
+            <label for="no">No</label>
+          </div>
+
+          <div class="selection title">
+            <label for="topics">Do you have any suggestions for Rhino-Con 2018?</label>
+            <textarea name="extra_topics" id="topics"></textarea>
+          </div>
+
+        </fieldset>
+
+        <button type="submit">Submit, to the rhinos!</button>
+
+      </form>
+
+      <footer>
+        <div class="foot">
+          <p id="copy">	&copy; Jacki Bolt, approved by the rhinos</p>
+          <img src="images/footprint.jpg" alt="Rhino Footprint" id="footprint">
         </div>
-
-
-        <label class="title">Would you be interested in sponsoring a rhino?</label>
-        <label for="yes"><input type="radio" id="yes" name="sponsor" value="yes">Yes</label>
-        <label for="no"><input type="radio" id="no" name="sponsor" value="no">No</label>
-
-        <label for="topics" class="title">Do you have any suggestions for Rhino-Con 2018?</label>
-        <textarea name="extra_topics" id="topics"></textarea>
-
-      </fieldset>
-
-      <button type="submit">Submit, to the rhinos!</button>
-
-    </form>
-
-    <footer>
-      <div class="foot">
-        <p>	&copy; Jacki Bolt, approved by the rhinos</p>
-        <img src="images/footprint.jpg" alt="Rhino Footprint" id="footprint">
-      </div>
-    </footer>
+      </footer>
+    </div>
 
   </body>
 </html>

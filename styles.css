@@ -5,9 +5,10 @@
 }
 
 body {
-  /* font-family: 'Tillana', cursive; */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Tillana', cursive;
+  /* font-family: 'Roboto', sans-serif; */
   color: #1f2b3d;
+  background: rgba(194,231,231,.5);
 }
 
 
@@ -24,10 +25,16 @@ h1 {
   padding-bottom: 22px;
   margin-top: 0;
   font-weight: 800;
+  margin-bottom: 0;
+}
+
+header img {
+  display: none;
 }
 
 h3 {
   font-weight: 800;
+  margin-top: 0;
 }
 
 p {
@@ -35,7 +42,7 @@ p {
   font-weight: 400;
 }
 
-/*  Form Styles  */
+/*  Form Element Styles  */
 
 form {
   text-align: center;
@@ -63,7 +70,7 @@ legend {
 label {
   display: block;
   margin-bottom: 5px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 label,
@@ -73,43 +80,23 @@ textarea {
 }
 
 input,
-textarea {
+textarea,
+select {
   background: #f2f2f2;
   border: none;
   width: 100%;
   border-radius: 5px;
+  transition-duration: .5s;
 }
 
-input {
+input,
+select {
   height: 45px;
   padding-left: 10px;
 }
 
-.top {
-  margin: auto;
-  margin-bottom: 2.5px;
-  border-bottom: #1f2b3d solid 3px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-[type="radio"],
-[type="checkbox"] {
-  width: 25px;
-  height: 25px;
-  margin-right: 12px;
-}
-
-#rhino_javan,
-#rhinomail,
-#no {
-  margin-bottom: 30px;
-}
-
 textarea {
-  width: 100%;
   height: 80px;
-  border: none;
   margin-top: 20px;
 }
 
@@ -121,6 +108,58 @@ button {
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
+  height: 38px;
+}
+
+.wrap {
+  background-color: white;
+  width: 96%;
+  margin: auto;
+}
+
+/*  Form Class/ID Styles  */
+
+.top {
+  margin: auto;
+  margin-bottom: 2.5px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: #1f2b3d solid 3px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.rhino {
+  text-align: left;
+}
+
+.title {
+  margin-top: 20px;
+}
+
+.selection label,
+.selection input {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+[type="radio"],
+[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+input::placeholder {
+  text-align: right;
+  padding-right: 15px;
+  color: lightgrey;
+}
+
+#phone::placeholder {
+  text-align: left;
 }
 
 /*  Footer Styles  */
@@ -134,48 +173,108 @@ footer {
 }
 
 .foot {
-  margin-left: 20%;
-}
-
-footer p,
-#footprint {
-  float: left;
+  width: 80%;
+  margin: auto;
 }
 
 #footprint {
-  height: 50px;
+  max-width: 120px;
 }
 
 footer::after {
-  content:""
+  content:"";
   clear: both;
   display: table;
 }
 
 /*  Pseudo Class Styles  */
 
-.contact input:hover {
-  border: #1f2b3d solid 1.5px;
-  box-shadow: 0 0 1pt 1pt #009999
+.contact input:hover,
+textarea:hover,
+select:hover {
+  border: grey solid 1.5px;
+  box-shadow: 0 0 1.5pt 1.5pt #009999;
 }
 
-.contact input:focus {
+button:hover {
+  border: #004c4c solid 1.5px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
   border: none;
   box-shadow: 0 0 1.5pt 1.5pt #009999;
   outline: none;
 }
 
+select:visited {
+  box-shadow: none;
+}
 
 
 @media (min-width: 768px) {
 
-  form {
-    width: 55%;
+  .container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
   }
 
+  header img {
+    display: inline-block;
+    max-height: 80px;
+    /* margin-right: 7%; */
+    margin-top: 3px;
+  }
 
+  .wrap {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .field {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+  }
+
+  .field input,
+  .field select {
+    width: 70%;
+  }
+
+  .field label {
+    margin-top: 15px;
+  }
 
   .foot {
-    margin-left: 35%;
+    width: 55%;
+    margin: auto;
+  }
+
+  #copy {
+    text-align: right;
+  }
+
+  #footprint {
+    max-width: 120px;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  #copy,
+  #footprint {
+    width: 50%;
+    float: left;
   }
 }
